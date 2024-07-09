@@ -3,28 +3,32 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tic-Tac-Toe Game</title>
         <link rel="stylesheet" href="./styles/style.css" />
-        <title>Tic Tac Toe</title>
     </head>
     <body>
-        <div class="calculator-container">
-            <div class="input-container">
-                <input
-                    type="number"
-                    id="num-one"
-                    class="input-number"
-                    placeholder="Enter first number"
-                />
-                <input
-                    type="number"
-                    id="num-two"
-                    class="input-number"
-                    placeholder="Enter second number"
-                />
-            </div>
-            <button type="button" id="sum" class="sum-button">Sum</button>
-            <div id="output" class="output"></div>
+        <div class="msg-container hide">
+            <p id="msg">Winner</p>
+            <button id="new-btn">New Game</button>
         </div>
+        <main>
+            <h1 class="title">Tic-Tac-Toe</h1>
+            <div class="container">
+                <div class="game">
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                </div>
+            </div>
+            <button id="reset-btn">Reset Game</button>
+        </main>
         <script type="module" src="./src/init.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
     </body>
 </html>

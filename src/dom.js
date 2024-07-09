@@ -1,8 +1,5 @@
-const dom = {
-    num1: document.getElementById('num-one'),
-    num2: document.getElementById('num-two'),
-    btn: document.getElementById('sum'),
-    output: document.getElementById('output'),
-};
-
-export default dom;
+export const boxes = document.querySelectorAll('.box');
+export const resetBtn = document.querySelector('#reset-btn');
+export const newGameBtn = document.querySelector('#new-btn');
+export const msgContainer = document.querySelector('.msg-container');
+export const msg = document.querySelector('#msg');
